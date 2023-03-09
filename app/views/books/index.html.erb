@@ -3,18 +3,26 @@
 </div>
 
 <table>
-  <tr>
-    <th>Title</th>
-    <th>Body</th>
-  </tr>
-  <tr>
-    <td><%= %></td>
-  </tr>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= %></td>
+      <td><%= %></td>
+      <td>Show</td>
+      <td>Edit</td>
+      <td>Destroy</td>
+    </tr>
+  </tbody>
 </table>
 
 <h2 class="new">New book</h2>
 
-<%= form_with model: Book.new do |f| %>
+<%= form_with model: @book, url: '/books', method: :post do |f| %>
   <div class="field">
     <label for="book_title">Title</label>
     <%= f.text_field :title %>
