@@ -24,6 +24,7 @@ body {
   color: #333;
   margin: 33px;
   font-size: 13px;
+  line-height: 18px;
 }
 
 h1 {
@@ -49,6 +50,7 @@ a {
 table {
   display: table;
   border-collapse: separate;
+  box-sizing: border-box;
   text-indent: initial;
   border-spacing: 2px;
 }
