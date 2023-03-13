@@ -28,18 +28,18 @@
 
 <h2 class="new">New book</h2>
 
-<div id="error_explanation">
 <% if @book.errors.any? %>
-  <h2 class="error-title">
+<div id="error_explanation">
+  <h2>
     <%= @book.errors.count %> errors prihibited this book from being saved:
   </h2>
-  <ul class="error-message">
+  <ul>
     <% @book.errors.full_messages.each do |message| %>
       <li><%= message %></li>
     <% end %>
   </ul>
-<% end %>
 </div>
+<% end %>
 
 <%= form_with model: @book, url: '/books', method: :post do |f| %>
   <div class="field">
