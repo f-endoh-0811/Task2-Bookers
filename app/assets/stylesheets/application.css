@@ -25,6 +25,7 @@ body {
   margin: 33px;
   font-size: 13px;
   line-height: 18px;
+  font-family: verdana, arial, helvetica, sans-serif;
 }
 
 .flash {
@@ -45,6 +46,7 @@ p, ul, td {
   font-size: 13px;
   line-height: 18px;
   margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
 }
 
 a {
